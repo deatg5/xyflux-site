@@ -1,6 +1,23 @@
 body {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
+
+body > div, #discord-section > div  {
+    border-bottom: 3px solid #5865F2;
+}
+
+
+
+h1, h2, h3, h4, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+
+
+/* navbar styles */
 
 nav {
     overflow: visible;
@@ -8,7 +25,7 @@ nav {
     text-align: center;
     position: relative;
     padding: 30px;
-    border-bottom: 2px solid #5865F2;
+    border-bottom: 3px solid #5865F2;
 }
   
 nav a {
@@ -16,17 +33,15 @@ nav a {
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 12px;
     display: inline-block;
     text-decoration: none;
 }
 
-
-  
 nav a:hover {
-    color: black;
+    color: #5865F2;
 }
   
 nav a.active {
@@ -41,6 +56,79 @@ nav a.active {
 #dropdown-button {
     display: none;
 }
+
+
+/* bg image styles */
+
+#bg-image-container {
+    height: 600px;
+    background-image: url(resources/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* remaining section styles */
+#the-sections {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0px;
+    background: linear-gradient(#36393F,#282b30)
+}
+
+/* discord section styles */
+
+#discord-header-text {
+    text-align: center;
+}
+
+#discord-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#discord-section > div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#discord-section img {
+    width: 40%;
+    border: 4px solid #2a2d31;
+    border-radius: 10px;
+}
+
+#discord-section div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#discord-section p {
+    text-align: center;
+}
+
+#discord-feature-1 img {
+    float: left;
+}
+
+#discord-feature-2 img {
+    float: right;
+}
+
+#discord-feature-3 img {
+    float: left;
+}
+
+#discord-feature-4 img {
+    float: right;
+}
+
+/* links section styles */
+
+
+
+
 
 
 
