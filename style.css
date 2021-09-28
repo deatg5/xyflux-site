@@ -86,19 +86,13 @@ nav a.active {
 #top-bg-header {
     text-shadow: 2px 2px black;
     font-size: 120px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -80%);
+    position: relative;
 }
 
 #top-bg-article {
     text-shadow: 2px 2px black;
     font-size: 30px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    position: relative;
 }
 
 
