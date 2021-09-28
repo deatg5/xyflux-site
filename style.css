@@ -1,18 +1,32 @@
+@font-face {
+    font-family: Oxygen-Regular;
+    src: url(resources/Oxygen-Regular.ttf);
+}
+
 body {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    background-image: url(resources/bg.jpg);
 }
-
-body > div, #discord-section > div  {
-    border-bottom: 3px solid #5865F2;
-}
-
-
 
 h1, h2, h3, h4, p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Oxygen-Regular;
     color: white;
+    text-align: center;
+}
+
+#button {
+    background-color: #5865F2;
+    color: white;
+    align-self: center;
+    padding: 10px 16px 10px 16px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+#button:hover {
+    cursor: pointer;
 }
 
 
@@ -34,7 +48,8 @@ nav a {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 1.25rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Oxygen-Regular;
+    font-weight: 600;
     padding: 12px;
     display: inline-block;
     text-decoration: none;
@@ -62,22 +77,50 @@ nav a.active {
 
 #bg-image-container {
     height: 600px;
-    background-image: url(resources/bg.jpg);
+    background-image: url(resources/top-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 3px solid #5865F2;
 }
 
+#top-bg-header {
+    text-shadow: 2px 2px black;
+    font-size: 120px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+#top-bg-article {
+    text-shadow: 2px 2px black;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+
+
 /* remaining section styles */
-#the-sections {
+#main-sections {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 0px;
-    background: linear-gradient(#36393F,#282b30)
+    border-bottom: 3px solid #5865F2;
+    background: linear-gradient(217deg, rgba(66,69,73, 0.9), rgba(255,0,0,0) 80%),
+            linear-gradient(127deg, rgba(54,57,62, 0.9), rgba(0,255,0,0) 80%),
+            linear-gradient(336deg, rgba(40,43,48, 0.9), rgba(0,0,255,0) 80%);
 }
 
 /* discord section styles */
 
-#discord-header-text {
+.header-text {
+    text-align: center;
+}
+
+.discord-header-text {
     text-align: center;
 }
 
@@ -89,6 +132,7 @@ nav a.active {
 #discord-section > div {
     margin-top: 40px;
     margin-bottom: 40px;
+    border-bottom: 3px solid #5865F2;
 }
 
 #discord-section img {
@@ -126,9 +170,30 @@ nav a.active {
 
 /* links section styles */
 
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7%;
+}
 
+#social-links img {
+    transition: filter 0.5s;
+}
 
+#social-links img:hover {
+    cursor: pointer;
+    filter: saturate(300%)
+}
 
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#credits p {
+    font-size: 14px;
+}
 
 
 
