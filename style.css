@@ -3,6 +3,8 @@
     src: url(resources/Oxygen-Regular.ttf);
 }
 
+
+
 body {
     margin: 0px;
     display: flex;
@@ -16,7 +18,7 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
-#button {
+.button {
     background-color: #5865F2;
     color: white;
     align-self: center;
@@ -25,7 +27,7 @@ h1, h2, h3, h4, p {
     font-size: 25px;
 }
 
-#button:hover {
+.button:hover {
     cursor: pointer;
 }
 
@@ -104,8 +106,8 @@ nav a.active {
     margin-top: 0px;
     border-bottom: 3px solid #5865F2;
     background: linear-gradient(217deg, rgba(66,69,73, 0.9), rgba(255,0,0,0) 80%),
-            linear-gradient(127deg, rgba(54,57,62, 0.9), rgba(0,255,0,0) 80%),
-            linear-gradient(336deg, rgba(40,43,48, 0.9), rgba(0,0,255,0) 80%);
+                linear-gradient(127deg, rgba(54,57,62, 0.9), rgba(0,255,0,0) 80%),
+                linear-gradient(336deg, rgba(40,43,48, 0.9), rgba(0,0,255,0) 80%);
 }
 
 /* discord section styles */
@@ -127,6 +129,10 @@ nav a.active {
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 3px solid #5865F2;
+}
+
+#discord-section > div:nth-child(5) {
+    border-bottom: none;
 }
 
 #discord-section img {
@@ -162,6 +168,33 @@ nav a.active {
     float: right;
 }
 
+#join-discord-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#special-button {
+    font-size: 30px;
+    padding: 20px 32px 20px 32px;
+    background-size: 300% 100%;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0px 0px 15px 0 rgba(23, 168, 108, 0.75);
+    transition: all .4s ease-in-out;
+}
+
+#special-button:hover {
+    background-position: 100% 0;
+    filter: hue-rotate(50deg);
+    box-shadow: 0px 0px 40px 0 rgba(23, 168, 108, 0.75);
+}
+
+#special-button:focus {
+    outline: none;
+}
+
+
 /* links section styles */
 
 #social-links {
@@ -187,6 +220,47 @@ nav a.active {
 
 #credits p {
     font-size: 14px;
+}
+
+#credits {
+    font-family: Oxygen-Regular;
+}
+
+#deatg {
+    color: white;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+#deatg:hover {
+    color: rgb(0, 158, 231);
+    filter:saturate(1000%);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* animations and fade in effect */
+
+.fade-in {
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; filter: blur(3px) }
+    to   { opacity: 1; filter: blur(0px) }
+}
+
+@keyframes greyfade {
+    from { filter: contrast(0%); }
+    to { filter: contrast(100%);  }
+}
+
+@keyframes rainbow {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #08e600, 0 0 40px #2300e6, 0 0 50px #e6d700, 0 0 60px #00b8e6, 0 0 70px #e60000; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #00aeff, 0 0 40px #ff4dd3, 0 0 50px #d8ff4d, 0 0 60px #4dffd8, 0 0 70px #ff8e4d, 0 0 80px #4deaff; }
 }
 
 
