@@ -4,7 +4,6 @@
 }
 
 
-
 body {
     margin: 0px;
     display: flex;
@@ -32,7 +31,6 @@ h1, h2, h3, h4, p {
 }
 
 
-
 /* navbar styles */
 
 nav {
@@ -55,6 +53,7 @@ nav a {
     padding: 12px;
     display: inline-block;
     text-decoration: none;
+    transition: color 0.1s;
 }
 
 nav a:hover {
