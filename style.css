@@ -177,6 +177,10 @@ nav a.active {
     float: right;
 }
 
+#rules-image:hover {
+    cursor: pointer;
+}
+
 #discord-feature-3 img {
     float: left;
 }
