@@ -2,9 +2,10 @@ function ToggleNavMenu() {
     var x = document.getElementById("hidden-menu");
     if (x.style.display === "flex") {
       x.style.display = "none";
+      document.getElementById("bg-image-container").style.height = "700px";
     } else {
       x.style.display = "flex";
-      document.getElementById("top-bg-header").style.top 
+      document.getElementById("bg-image-container").style.height = "900px";
     }
     //start checking if the screen width is over 1050
     setInterval(RemoveHiddenMenu, 100)
