@@ -122,11 +122,18 @@ nav a.active {
     background-color: #0E1218;
 }
 
+#discord-header-section {
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
 .discord-section.content {
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
     gap: 80px;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .discord-section.content img {
@@ -304,7 +311,6 @@ nav a.active {
         width: 100%;
         border: 4px solid #2a2d31;
         border-radius: 10px;
-        margin-bottom: 40px;
     }
 
 
