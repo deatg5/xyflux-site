@@ -49,6 +49,7 @@ nav a {
     margin-right: 5px;
     font-size: 1.25rem;
     font-family: Ginto-Nord;
+    text-shadow: 2px 2px 3px black;
     font-weight: 600;
     padding: 12px;
     display: inline-block;
