@@ -38,7 +38,7 @@ nav {
     text-align: center;
     position: relative;
     padding: 30px;
-    border-bottom: 3px solid #5865F2;
+    box-shadow: 2px 2px 8px black;
     backdrop-filter: blur(12px);
 }
   
